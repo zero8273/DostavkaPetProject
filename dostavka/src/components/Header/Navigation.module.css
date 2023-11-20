@@ -1,0 +1,13 @@
+nav {
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  /* align-items: flex-start; */
+  justify-content: space-evenly;
+}
+a {
+  color: #cfcfcf;
+  font-size: 18px;
+  font-weight: 400;
+}
