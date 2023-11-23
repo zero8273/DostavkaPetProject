@@ -1,0 +1,31 @@
+.product-section__name {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 115px;
+  /* margin: 50px 0 50px 115px; */
+}
+.product-section__name::before {
+  margin-top: 2px;
+  position: absolute;
+  content: '';
+  top: 5px;
+  width: 4px;
+  height: 33px;
+  background-color: #618967;
+  right: calc(100% + 20px);
+}
+.product-section {
+  padding-top: 51px;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border-image-slice: 1;
+  width: 100%;
+}

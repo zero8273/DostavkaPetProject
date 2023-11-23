@@ -55,12 +55,16 @@
   padding: 10px;
   border-radius: 16px;
 }
+.header__panel-contact-icon:hover {
+  box-shadow: 0px 5px 12px 0px rgba(114, 164, 121, 0.3);
+}
 .header__panel-contact-content {
   display: flex;
   flex-direction: column;
   margin-left: 8px;
   align-items: flex-start;
 }
+
 .header__panel-contact-disc {
   color: #cfcfcf;
 
