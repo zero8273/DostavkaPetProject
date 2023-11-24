@@ -1,7 +1,7 @@
 import style from './Navigation.module.css';
 const Navigation = () => {
   return (
-    <nav>
+    <nav className={style.navigation}>
       <ul className={style.nav__list}>
         <li>
           <a href="#">Холодні страви </a>

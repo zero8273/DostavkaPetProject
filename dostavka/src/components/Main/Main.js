@@ -8,7 +8,7 @@ const Main = () => {
       <ProductSection>Гарячі страви</ProductSection>
       <ProductSection>М"ясні страви</ProductSection>
       <AboutUs></AboutUs>
-      <Contacts></Contacts>
+      <Contacts />
     </main>
   );
 };
