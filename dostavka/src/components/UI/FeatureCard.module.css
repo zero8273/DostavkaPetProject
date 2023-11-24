@@ -3,9 +3,9 @@
   width: 227px;
   height: 227px;
   color: white;
-  background: rgba(80, 75, 74, 0.9);
+  background: rgba(80, 75, 74, 0.85);
   filter: blur(0.2px);
-  padding: 40px 20px;
+  padding: 70px 20px 40px 20px;
 }
 .feature-card:hover {
   color: #79b282;

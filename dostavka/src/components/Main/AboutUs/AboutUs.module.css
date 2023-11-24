@@ -1,6 +1,57 @@
-/* .icon {
-  filter: grayscale(100%) brightness(140%);
-} */
-/* img:hover {
-  filter: grayscale(0%);
-} */
+.aboutus {
+  max-width: 1363px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-image: linear-gradient(
+      90deg,
+      #211f20 20%,
+      rgba(68, 64, 63, 0.2) 100%
+    ),
+    url('../../../assets/images/main_back.png');
+  background-repeat: no-repeat;
+  background-position: 0px center, 100% center;
+  background-size: 150%, 100% 100%;
+}
+.aboutus-futures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 60%;
+  margin: 70px 100px;
+}
+.aboutus-content {
+  margin: 100px 70px;
+  max-width: 40%;
+  text-align: left;
+}
+.aboutus-content__title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.aboutus-content__description {
+  color: #cfcfcf;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+.aboutus-content__btn {
+  width: 223px;
+  height: 59px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2.5px);
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+.aboutus-content__btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
