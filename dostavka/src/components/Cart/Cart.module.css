@@ -1,0 +1,79 @@
+.cart-order {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 25px 20px;
+  width: 40%;
+  /* height: 105px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+}
+.cart-btn__back {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.cart-title {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 115px;
+  /* margin: 50px 0 50px 115px; */
+}
+.cart-title::before {
+  margin-top: 2px;
+  position: absolute;
+  content: '';
+  top: 5px;
+  width: 4px;
+  height: 33px;
+  background-color: #618967;
+  right: calc(100% + 20px);
+}
+.cart-title__count {
+  color: #72a479;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-left: 10px;
+}
+.cart-order__title {
+  color: #a6a7ab;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart-order__summ {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.cart-item__list {
+  overflow: auto;
+  height: 55vh;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Колір самого скролбару */
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 4px;
+}
+
+/* Колір фону за скролбаром */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
