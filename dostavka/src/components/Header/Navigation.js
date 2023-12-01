@@ -4,13 +4,13 @@ const Navigation = () => {
     <nav className={style.navigation}>
       <ul className={style.nav__list}>
         <li>
-          <a href="#">Холодні страви </a>
+          <a href="#Холодні страви">Холодні страви </a>
         </li>
         <li>
-          <a href="#">Гарячі страви</a>
+          <a href="#Гарячі страви">Гарячі страви</a>
         </li>
         <li>
-          <a href="#">М"ясні страви</a>
+          <a href="#М'ясні страви">М'ясні страви</a>
         </li>
         <li>
           <a href="#">Супи</a>

@@ -6,6 +6,7 @@
   background: rgba(80, 75, 74, 0.85);
   filter: blur(0.2px);
   padding: 70px 20px 40px 20px;
+  text-align: center;
 }
 .feature-card:hover {
   color: #79b282;

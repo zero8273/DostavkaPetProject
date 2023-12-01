@@ -21,6 +21,7 @@
 .item-price {
   margin-right: 10%;
   margin-left: 10%;
+  white-space: nowrap;
 }
 .item-btn {
   display: flex;

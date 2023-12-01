@@ -1,23 +1,35 @@
 import style from './CartItem.module.css';
-import imgPiza from '../../assets/images/menu_1_0.png';
-const CartItem = () => {
+
+const CartItem = (props) => {
   return (
     <div className={style.item}>
-      <img className={style['item-img']} src={imgPiza}></img>
+      <img
+        className={style['item-img']}
+        src={require(`../../assets/images/${props.data.img}`)}
+        alt={`страва ${props.data.name}`}
+      ></img>
       <div className={style['item-content']}>
-        <h3>Піца подвійна папероні</h3>
-        <p>
-          Кальмары, мидии, креветки, сыр маасдам, красный лук, микс оливок,
-          базилик, соус песто
-        </p>
+        <h3>{props.data.name}</h3>
+        <p>{props.data.description}</p>
       </div>
       <div className={style['item-counter']}>
-        <button className={style['item-btn']}>-</button>
-        <span className={style['item-counter__amount']}>1</span>
-        <button className={style['item-btn']}>+</button>
+        <button className={style['item-btn']} onClick={props.onRemove}>
+          -
+        </button>
+        <span className={style['item-counter__amount']}>
+          {props.data.amount}
+        </span>
+        <button className={style['item-btn']} onClick={props.onAdd}>
+          +
+        </button>
       </div>
-      <span className={style['item-price']}>1640 грн</span>{' '}
-      <button className={`${style['item-btn']} ${style['item-btn__remove']}`}>
+      <span className={style['item-price']}>
+        {`${props.data.price * props.data.amount} ₴`}
+      </span>
+      <button
+        className={`${style['item-btn']} ${style['item-btn__remove']}`}
+        onClick={props.onDelete}
+      >
         +
       </button>
     </div>

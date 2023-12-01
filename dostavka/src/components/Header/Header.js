@@ -2,7 +2,11 @@ import styles from './Header.module.css';
 import Navigation from './Navigation';
 import Button from '../UI/Button';
 import CallIcon from '../../assets/svg/Calling.svg';
-const Header = () => {
+import { useContext } from 'react';
+import CartContext from '../../store/Cart-context';
+const Header = (props) => {
+  const ctx = useContext(CartContext);
+  const cartCount = ctx.items.length;
   return (
     <header>
       <div className={styles.header__panel}>
@@ -24,8 +28,9 @@ const Header = () => {
             </span>
           </div>
         </div>
-        <Button>
-          Корзина<div className={styles['header__panel-cart-count']}>3</div>
+        <Button onClick={props.onShowCart}>
+          Корзина
+          <div className={styles['header__panel-cart-count']}>{cartCount}</div>
         </Button>
       </div>
       <div className={styles['header__description']}>

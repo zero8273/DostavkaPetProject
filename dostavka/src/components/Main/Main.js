@@ -8,7 +8,7 @@ const Main = () => {
     <main>
       <ProductSection data={DATA[1]}>Холодні страви</ProductSection>
       <ProductSection data={DATA[0]}>Гарячі страви</ProductSection>
-      <ProductSection data={DATA[2]}>М"ясні страви</ProductSection>
+      <ProductSection data={DATA[2]}>М'ясні страви</ProductSection>
       <AboutUs></AboutUs>
       <Contacts />
     </main>

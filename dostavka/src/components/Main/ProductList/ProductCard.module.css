@@ -4,6 +4,7 @@
   border-radius: 10px;
   background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
   margin: 50px 0;
+  position: relative;
 }
 
 .product-card__details {
@@ -54,4 +55,38 @@
   display: flex;
   justify-content: space-between;
   align-items: top;
+}
+.item-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item-counter__amount {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 20px;
+}
+.btn-change__amout {
+  font-size: 35px;
+  width: 65px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.product-card__counter {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #79b282;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 20px;
 }
